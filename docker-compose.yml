@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  weather-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: krishigo-weather-frontend
+    restart: unless-stopped
+    ports:
+      - "3001:80"
+    depends_on:
+      - weather-backend
+    environment:
+      - VITE_API_BASE_URL=http://localhost:8000
+    networks:
+      - weather-net
+
+  weather-backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: krishigo-weather-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    depends_on:
+      - weather-redis
+    environment:
+      - REDIS_HOST=weather-redis
+      - REDIS_PORT=6379
+      - PYTHONUNBUFFERED=1
+    networks:
+      - weather-net
+
+  weather-redis:
+    image: redis:7.2-alpine
+    container_name: krishigo-weather-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - weather-net
+
+volumes:
+  redis-data:
+
+networks:
+  weather-net:
+    driver: bridge
