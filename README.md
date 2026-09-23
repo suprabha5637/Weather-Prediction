@@ -20,49 +20,6 @@
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?logo=github&logoColor=white)](https://github.com/)
 
 ---
-
-## 📌 Table of Contents
-
-- [Overview](#-overview)
-- [Problem Statement](#-problem-statement)
-- [Solution](#-solution)
-- [Project Objectives](#-project-objectives)
-- [Core Features](#-core-features)
-- [Farmer Intelligence](#-farmer-intelligence)
-- [Weather Intelligence](#-weather-intelligence)
-- [AI & Decision Support](#-ai--decision-support)
-- [Authentication & User Management](#-authentication--user-management)
-- [Location Intelligence](#-location-intelligence)
-- [Weather Visualization](#-weather-visualization)
-- [Reports & Analytics](#-reports--analytics)
-- [Application Architecture](#-application-architecture)
-- [Technology Stack](#-technology-stack)
-- [Project Structure](#-project-structure)
-- [Frontend Architecture](#-frontend-architecture)
-- [Backend Architecture](#-backend-architecture)
-- [Database Architecture](#-database-architecture)
-- [Weather Data Pipeline](#-weather-data-pipeline)
-- [Data Quality & Verification](#-data-quality--verification)
-- [Forecast Change Detection](#-forecast-change-detection)
-- [Agricultural Intelligence Engine](#-agricultural-intelligence-engine)
-- [MLOps & Model Registry](#-mlops--model-registry)
-- [Security](#-security)
-- [Environment Variables](#-environment-variables)
-- [Installation](#-installation)
-- [Running the Application](#-running-the-application)
-- [Docker Deployment](#-docker-deployment)
-- [Testing](#-testing)
-- [Production Architecture](#-production-architecture)
-- [Performance](#-performance)
-- [Scalability](#-scalability)
-- [Future Roadmap](#-future-roadmap)
-- [Contributing](#-contributing)
-- [Git Workflow](#-git-workflow)
-- [License](#-license)
-- [Author](#-author)
-
----
-
 # 🌍 Overview
 
 The **Weather Prediction & Farmer Intelligence Platform** is a modern full-stack web application designed specifically around the needs of farmers.
