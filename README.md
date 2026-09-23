@@ -1,17 +1,3 @@
-# 🌦️ Weather Prediction & Farmer Intelligence Platform
-
-> An intelligent, farmer-focused weather prediction, agricultural intelligence, and decision-support platform designed to help farmers understand weather conditions and make better farming decisions.
-
-[![React](https://img.shields.io/badge/React-18+-61DAFB?logo=react&logoColor=black)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5+-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Vite](https://img.shields.io/badge/Vite-Latest-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
-[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
-[![Git](https://img.shields.io/badge/Git-Version_Control-F05032?logo=git&logoColor=white)](https://git-scm.com/)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?logo=github&logoColor=white)](https://github.com/)
-
----
 # 🌍 Overview
 
 The **Weather Prediction & Farmer Intelligence Platform** is a modern full-stack web application designed specifically around the needs of farmers.
@@ -75,7 +61,7 @@ This platform attempts to bridge that gap by transforming weather information in
 
 The platform combines:
 
-### Weather Intelligence
+## 🌦️ Weather Intelligence
 
 - Current weather
 - Hourly forecast
@@ -91,7 +77,7 @@ The platform combines:
 - Cloud cover
 - Extreme-weather alerts
 
-### Agricultural Intelligence
+## 🌱 Agricultural Intelligence
 
 - Crop recommendations
 - Crop suitability
@@ -102,7 +88,7 @@ The platform combines:
 - Harvest planning foundations
 - Soil and field insights
 
-### AI Intelligence
+## 🤖 AI Intelligence
 
 - AI Weather Insights
 - AI Crop Advisory
@@ -111,7 +97,7 @@ The platform combines:
 - Farm-context analysis
 - What-if simulation foundation
 
-### User Intelligence
+## 👤 User Intelligence
 
 - Farmer profile
 - Farm profile
@@ -438,7 +424,7 @@ The crop database can be expanded as additional agricultural datasets are introd
 
 The AI Crop Advisory module is designed to convert weather information into farmer-oriented guidance.
 
-### Irrigation
+## Irrigation
 
 Consider:
 
@@ -448,7 +434,7 @@ Consider:
 - Evapotranspiration
 - Crop stage
 
-### Spraying
+## Spraying
 
 Consider:
 
@@ -457,7 +443,7 @@ Consider:
 - Humidity
 - Temperature
 
-### Fertilizer
+## Fertilizer
 
 Future versions can consider:
 
@@ -466,7 +452,7 @@ Future versions can consider:
 - Weather
 - Nutrient requirements
 
-### Pest & Disease
+## Pest & Disease
 
 Future versions can combine:
 
@@ -1191,7 +1177,7 @@ backend/db/
 
 Potential entities include:
 
-### Users
+## Users
 
 ```text
 user_id
@@ -1204,7 +1190,7 @@ created_at
 updated_at
 ```
 
-### Farms
+## Farms
 
 ```text
 farm_id
@@ -1219,7 +1205,7 @@ created_at
 updated_at
 ```
 
-### Crops
+## Crops
 
 ```text
 crop_id
@@ -1232,7 +1218,7 @@ humidity_requirement
 soil_requirement
 ```
 
-### Weather
+## Weather
 
 ```text
 weather_id
@@ -1250,7 +1236,7 @@ visibility
 cloud_cover
 ```
 
-### Alerts
+## Alerts
 
 ```text
 alert_id
@@ -1263,7 +1249,7 @@ start_time
 end_time
 ```
 
-### User Preferences
+## User Preferences
 
 ```text
 user_id
@@ -1494,13 +1480,13 @@ cd backend
 python3 -m venv venv
 ```
 
-macOS/Linux:
+### macOS/Linux
 
 ```bash
 source venv/bin/activate
 ```
 
-Windows:
+### Windows
 
 ```powershell
 venv\Scripts\activate
@@ -1707,34 +1693,34 @@ It should be translated into understandable agricultural context.
 # 📊 Production Architecture
 
 ```text
-                        Internet
-                           │
-                           ▼
-                    ┌──────────────┐
-                    │ CDN / WAF    │
-                    └──────┬───────┘
-                           │
-                           ▼
-                    ┌──────────────┐
-                    │ Load Balancer│
-                    └──────┬───────┘
-                           │
-              ┌────────────┴────────────┐
-              │                         │
-              ▼                         ▼
-       ┌──────────────┐          ┌──────────────┐
-       │ Frontend CDN │          │ FastAPI APIs │
-       └──────────────┘          └──────┬───────┘
-                                        │
-                         ┌──────────────┼──────────────┐
-                         │              │              │
-                         ▼              ▼              ▼
-                    PostgreSQL       Redis       ML Services
-                         │              │              │
-                         └──────────────┼──────────────┘
-                                        │
-                                        ▼
-                                External Weather APIs
+                         Internet
+                            │
+                            ▼
+                     ┌──────────────┐
+                     │ CDN / WAF    │
+                     └──────┬───────┘
+                            │
+                            ▼
+                     ┌──────────────┐
+                     │ Load Balancer│
+                     └──────┬───────┘
+                            │
+              ┌─────────────┴─────────────┐
+              │                           │
+              ▼                           ▼
+       ┌──────────────┐           ┌──────────────┐
+       │ Frontend CDN │           │ FastAPI APIs │
+       └──────────────┘           └──────┬───────┘
+                                         │
+                          ┌──────────────┼──────────────┐
+                          │              │              │
+                          ▼              ▼              ▼
+                     PostgreSQL       Redis       ML Services
+                          │              │              │
+                          └──────────────┼──────────────┘
+                                         │
+                                         ▼
+                               External Weather APIs
 ```
 
 ---
@@ -1762,37 +1748,37 @@ Weather data should be cached where appropriate to avoid unnecessary repeated ex
 
 Potential scaling areas:
 
-### Frontend
+## Frontend
 
 * CDN
 * Static hosting
 * Edge caching
 
-### Backend
+## Backend
 
 * Horizontal scaling
 * Container orchestration
 * Load balancing
 
-### Database
+## Database
 
 * PostgreSQL
 * Read replicas
 * Indexing
 * Partitioning
 
-### Cache
+## Cache
 
 * Redis
 
-### ML
+## ML
 
 * Dedicated inference service
 * GPU inference
 * Model registry
 * Batch prediction
 
-### Data
+## Data
 
 * Object storage
 * Data lake
@@ -2327,9 +2313,9 @@ The Weather Prediction & Farmer Intelligence Platform is designed to evolve from
                          FARMER
                             │
                             ▼
-                    ┌───────────────┐
-                    │   PLATFORM    │
-                    └───────┬───────┘
+                     ┌───────────────┐
+                     │   PLATFORM    │
+                     └───────┬───────┘
                             │
        ┌────────────────────┼────────────────────┐
        │                    │                    │
@@ -2357,98 +2343,10 @@ The Weather Prediction & Farmer Intelligence Platform is designed to evolve from
                   FARMER INTELLIGENCE
                             │
                             ▼
-                   BETTER DECISIONS
+                     BETTER DECISIONS
 ```
 
 **Weather Prediction & Farmer Intelligence Platform — built to make weather understandable, agriculture smarter, and technology more useful for farmers. 🌾🌦️🤖**
 
 ```
 ```
-g.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
-[![Git](https://img.shields.io/badge/Git-Version%20Control-F05032?logo=git&logoColor=white)](https://git-scm.com/)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?logo=github&logoColor=white)](https://github.com/)
-
----
-
-## 📌 Table of Contents
-
-- [Overview](#-overview)
-- [Problem Statement](#-problem-statement)
-- [Solution](#-solution)
-- [Project Objectives](#-project-objectives)
-- [Key Features](#-key-features)
-- [Farmer Intelligence](#-farmer-intelligence)
-- [Weather Intelligence](#-weather-intelligence)
-- [AI & Decision Support](#-ai--decision-support)
-- [Authentication & User Management](#-authentication--user-management)
-- [System Architecture](#-system-architecture)
-- [Technology Stack](#-technology-stack)
-- [Project Structure](#-project-structure)
-- [Frontend Architecture](#-frontend-architecture)
-- [Backend Architecture](#-backend-architecture)
-- [Database Architecture](#-database-architecture)
-- [Weather Data Pipeline](#-weather-data-pipeline)
-- [Data Quality & Verification](#-data-quality--verification)
-- [Forecast Change Detection](#-forecast-change-detection)
-- [Agricultural Intelligence Engine](#-agricultural-intelligence-engine)
-- [MLOps & Model Registry](#-mlops--model-registry)
-- [Security](#-security)
-- [Docker & Deployment](#-docker--deployment)
-- [Environment Variables](#-environment-variables)
-- [Installation](#-installation)
-- [Running the Frontend](#-running-the-frontend)
-- [Running the Backend](#-running-the-backend)
-- [Running with Docker](#-running-with-docker)
-- [Testing](#-testing)
-- [Production Considerations](#-production-considerations)
-- [Future Roadmap](#-future-roadmap)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Author](#-author)
-
----
-
-# 🌦️ Overview
-
-**Weather Prediction & Farmer Intelligence Platform** is a full-stack agricultural weather intelligence application designed to help farmers understand weather conditions and make better weather-aware farming decisions.
-
-Traditional weather applications primarily present raw meteorological information such as:
-
-- Temperature
-- Rainfall
-- Humidity
-- Wind
-- Pressure
-- UV Index
-- Air Quality
-- Cloud Cover
-
-This project goes beyond simply displaying weather data.
-
-The platform is designed to transform weather information into **agricultural intelligence** by connecting weather conditions with:
-
-- Crop suitability
-- Crop planning
-- Irrigation decisions
-- Farm activities
-- Crop harvesting
-- Weather alerts
-- Extreme weather risks
-- Soil and field insights
-- Agricultural recommendations
-- AI-assisted weather interpretation
-- Forecast change detection
-- Weather trend analysis
-
-The core concept is:
-
-```text
-Weather Data
-      ↓
-Weather Intelligence
-      ↓
-Agricultural Intelligence
-      ↓
-Actionable Farm Decisions
