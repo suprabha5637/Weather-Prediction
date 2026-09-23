@@ -1,13 +1,5 @@
 # 🌦️ Weather Prediction & Farmer Intelligence Platform
 
-> **An intelligent, farmer-focused weather prediction and agricultural decision-support platform that transforms weather data into actionable insights for crop planning, irrigation, farm operations, risk management, and weather-aware agricultural decisions.**
-
-[![React](https://img.shields.io/badge/React-18+-61DAFB?logo=react&logoColor=white)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5+-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Vite](https://img.shields.io/badge/Vite-5+-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
-[![Python](https://im````markdown
-# 🌦️ Weather Prediction & Farmer Intelligence Platform
-
 > An intelligent, farmer-focused weather prediction, agricultural intelligence, and decision-support platform designed to help farmers understand weather conditions and make better farming decisions.
 
 [![React](https://img.shields.io/badge/React-18+-61DAFB?logo=react&logoColor=black)](https://react.dev/)
